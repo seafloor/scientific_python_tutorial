@@ -1,5 +1,5 @@
 # Overview
-This series of tutorials will introduce python and the python scientific computing (SciPy) stack to R users via ipython and jupyter lab.
+This series of tutorials will introduce python and the python scientific computing (SciPy) stack to R users via ipython and jupyter lab. *Note: the notebooks are a work in progress so will be updated over time*.
 
 # Installation
 
