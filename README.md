@@ -22,7 +22,13 @@ On HPC clusters you will need to start an interactive job, ssh into the compute 
 salloc --job-name=jupyter --time=02:00:00 --nodes=1 --ntasks=1 --tasks-per-node=1 --mem-per-cpu=30G
 ```
 
-We can then either ssh directly into the node we were allocated or run `srun --pty /bin/bash` to start a bash terminal on the compute node. You can check your node name with `echo "$SLURMD_NODENAME"`. Now load the python module and your conda environment (names will differ for your HPC cluster):
+We can then either ssh directly into the node we were allocated or run:
+
+```
+srun --pty /bin/bash
+```
+
+to start a bash terminal on the compute node. You can check your node name with `echo "$SLURMD_NODENAME"`. Now load the python module and your conda environment (names will differ for your HPC cluster):
 
 ```
 module load anaconda/2023.03
