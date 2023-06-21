@@ -28,7 +28,13 @@ We can then either ssh directly into the node we were allocated or run:
 srun --pty /bin/bash
 ```
 
-to start a bash terminal on the compute node. You can check your node name with `echo "$SLURMD_NODENAME"`. Now load the python module and your conda environment (names will differ for your HPC cluster):
+to start a bash terminal on the compute node. You can check your node name with
+
+```
+echo "$SLURMD_NODENAME"
+```
+
+Now load the python module and your conda environment (names will differ for your HPC cluster):
 
 ```
 module load anaconda/2023.03
